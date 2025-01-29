@@ -79,6 +79,7 @@ nav .home-link{
 }
 
 
+
 @media (max-width: 780px) {
     .links-container {
         flex-direction: column;
@@ -86,7 +87,7 @@ nav .home-link{
         justify-content: flex-start;
         position: fixed;
         top: -80%;
-        right: -200%; 
+        right: -205%; 
         z-index: 100;
         width: 400px;
         color: white;
