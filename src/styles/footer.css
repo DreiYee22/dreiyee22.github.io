@@ -1,0 +1,44 @@
+footer{
+    overflow-y: hidden;
+    background-image: url('/src/images/footer-background.png');
+    background-size: cover;
+    color: white;
+    font-size: 1em;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.left-footer{
+    width: 40%;
+    display: flex;
+    gap: 8em;
+    justify-content: flex-end;
+    
+}
+
+.right-footer{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    
+}
+
+.location-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.rights-reserved{
+    text-align: center;
+}
+
+.footer h3{
+    font-style: bold;
+    margin-bottom: 5px;
+}
+
