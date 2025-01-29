@@ -1,6 +1,10 @@
-@media (max-width: 768px) {
+@media (max-width: 780px) {
     .header {
       height: 30vh;
+    }
+
+    .header-content{
+        margin-top: 2em;
     }
 
     .m-v-statements{
