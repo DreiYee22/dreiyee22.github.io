@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+  }
+  
+  html{
+    overflow-x: hidden;
+  
+    width: 100%;
+    height: 100%;
+  }
+  
+  body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    background-color: #FAF6F1;
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+  }
+  
+
+.header{
+    width: 100%;
+    height: 40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+    
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .header img {
+    object-fit: cover;
+    filter: brightness(40%);
+    
+    width: 100%;
+    min-width: 400px;
+    height: 100%;
+  
+    position: absolute;
+    
+    z-index: -1;
+  }
+  
+  .header-content{
+    font-size: clamp(2em, 5vw, 3em);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .header-content p{
+    font-size: clamp(.5em, 1vw, 1em);
+    text-transform: capitalize;
+  }
+
+
+main{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.contact-container h3 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+.contact-info {
+    list-style: none;
+    text-align: left;
+    font-size: x-small;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    justify-content: space;
+    margin-bottom: 1em;
+    gap: 1em;
+    font-size: 1rem;
+    font-weight: 00;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+
+
+
+.social-buttons {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    height: 100%;
+    gap: .5em;
+}
+
+.social-buttons button {
+    background-color: white;
+    color: rgb(42, 40, 40);
+    font-weight: bold;
+    font-size: x-small;
+    width: 20px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-buttons button:hover {
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+.contact-container{
+    width: 50em;
+    height: 30em;
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+    border-radius: 10px;
+}
+
+.left-panel{
+    background-image: url('/src/images/contact-left-panel-background.png');
+    width: 50%;
+    background-color: #3C3C3C;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    background-color: rgb(42, 40, 40);
+    padding: 2.5em;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    text-align: left;
+}
+
+.right-panel {
+
+    position: relative;
+    width: 50%;
+    height: 30em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.right-panel::before{
+    content: '';
+  border: 2px solid #3C3C3C;
+  border-radius: 8px;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+
+  pointer-events: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+}
+
+input,textarea{
+    font-family: 'Lato', sans-serif;
+}
+
+  .input-box {
+    position: relative;
+    width: 310px;
+    margin:  0;
+    border-bottom: 2px solid #3C3C3C;
+
+  }
+
+  .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  .input-box input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+  }
+
+  .input-box textarea {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 70px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    max-height: 100px;
+    margin-top: -20px;
+   
+  }
+
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
+    top: -5px;
+  }
+
+  .input-box input:-webkit-autofill {
+    background-color: transparent !important;
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: black !important;
+  }
+
+  button {
+    margin: auto;
+    width: 16em;
+    height: 40px;
+    background: #3C3C3C;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+  }

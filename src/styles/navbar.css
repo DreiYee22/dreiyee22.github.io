@@ -23,6 +23,7 @@ nav {
     margin: 0 auto;
     border-radius: .5em;
     border: 1px solid white;
+    
 }
 
 .altiura-nav{
@@ -42,8 +43,6 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-   
-    
 }
 
 nav a{
@@ -54,6 +53,7 @@ nav a{
     text-decoration: none;
     color: white;
 }
+
 
 nav .home-link{
     margin-right: auto;
