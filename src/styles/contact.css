@@ -137,8 +137,9 @@ main{
 
 
 .contact-container{
-    width: 50em;
-    height: 30em;
+    width: 100%;
+    max-width: 50em;
+    height: auto;
     background-color: white;
     box-shadow: 5px 5px 10px gray;
     display: flex;
@@ -198,7 +199,8 @@ input,textarea{
 
   .input-box {
     position: relative;
-    width: 310px;
+    width: 100%;
+    max-width: 310px;
     margin:  0;
     border-bottom: 2px solid #3C3C3C;
 
@@ -258,4 +260,8 @@ input,textarea{
     font-family: 'Lato',sans-serif;
     font-weight: 300;
     cursor: pointer;
+  }
+
+  svg{
+    min-width: 2em;
   }
