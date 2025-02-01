@@ -51,3 +51,8 @@
     font-size: clamp(.5em, 1vw, 1em);
     text-transform: capitalize;
   }
+
+  main{
+    min-height: 200vh;
+    height: auto;
+  }
