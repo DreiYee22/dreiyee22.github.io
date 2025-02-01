@@ -37,7 +37,7 @@
 @media (max-width: 840px){
     main{
         height: auto;        
-        padding: 2em;
+
     }
 
     .contact-container{
@@ -70,11 +70,52 @@
     }
 
     .input-box{
-        width: 30;
+        min-width: 400px;
+        max-width: 90%;
 
     }
 
     .input-box textarea{
         height: 30px;
+    }
+}
+
+
+@media(max-width: 555px){
+    .contact-info ul{
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .left-panel{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+
+/** Projects List **/
+
+@media(max-width:1480px){
+    .projects-list-container{
+        max-width: 1060px;
+    }
+}
+
+
+@media(max-width:1130px){
+    .projects-list-container{
+        max-width: 710px;
+    }
+
+    .search-feature{
+        justify-content: center;
+        padding: 1em 0 0 0;
+    }
+}
+
+@media(max-width: 710px){
+    .projects-list-container{
+        max-width: 355px;
     }
 }
