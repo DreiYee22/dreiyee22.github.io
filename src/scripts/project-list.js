@@ -1,5 +1,5 @@
 const projects = [{
-    webpage: '',
+    webpage: '/projectspages/soho-nyc.html',
     image: 'src/images/projects/soho-nyc.jpg',
     name: 'SoHo, NYC',
     alt: 'soho-nyc',

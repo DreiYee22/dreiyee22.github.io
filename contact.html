@@ -84,21 +84,21 @@
 
     </div>
     <div class="right-panel">
-    <form>
+    <form method="POST" name="contact-form" action="https://script.google.com/macros/s/AKfycbwNj3qSeIWDwcflTP5QG_31hokBlg9mzhvnvNhuNM9Fx_z5aFl17m2xOIXdJDH1_q2X3Q/exec">
       <div class="input-box">
-        <input type="text" name="name" id="name" required />
+        <input type="text" name="Name" id="name" required>
         <label for="name">Name</label>
       </div>
       <div class="input-box">
-        <input type="text" name="email" id="email" required />
+        <input type="text" name="Email" id="email" required>
         <label for="email">Email</label>
       </div>
       <label for="message">Message or Feedback</label>
       <div class="input-box">
-        <textarea name="message" id="message" required></textarea>
+        <textarea name="Message or Feedback" id="message" required></textarea>
       </div>
 
-      <button>SUBMIT</button>
+      <button type="submit" id="submit">SUBMIT</button>
     </form>
   </div>
   </div>
@@ -140,6 +140,29 @@
 </div>
 
 </footer>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwNj3qSeIWDwcflTP5QG_31hokBlg9mzhvnvNhuNM9Fx_z5aFl17m2xOIXdJDH1_q2X3Q/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  
+  e.preventDefault()
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! Your message has been submitted." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})
+  
+
+
+</script>
+
+
+</body>
 
 
 </html>
