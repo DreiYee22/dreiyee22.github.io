@@ -118,6 +118,12 @@
 @media(max-width:1480px){
     .projects-list-container{
         max-width: 1060px;
+       
+    }
+
+    .projects{
+        width: 100%;
+
     }
 }
 
@@ -137,4 +143,41 @@
     .projects-list-container{
         max-width: 355px;
     }
+
+    .projects{
+        padding-bottom: 4em;
+    }
 }
+
+@media(max-width: 370px){
+    input.search{
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .project-card{
+        width: 100%;
+        min-width: 280px;
+        height:  300px;
+    }
+
+}
+
+
+/** Specific Projects **/
+
+@media (max-width: 1120px){
+    .info-map{
+        flex-direction: column;
+    }
+
+    #map{
+        width: 100%;
+    }
+
+    .info-map{
+        margin-bottom: 2em;
+    }
+}
+
+
