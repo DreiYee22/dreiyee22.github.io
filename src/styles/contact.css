@@ -109,30 +109,18 @@ main{
     align-items: flex-end;
     height: 100%;
     gap: .5em;
+
 }
 
-.social-buttons button {
-    background-color: white;
-    color: rgb(42, 40, 40);
-    font-weight: bold;
-    font-size: x-small;
-    width: 20px;
-    height: 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.social-buttons button:hover {
-    background-color: lightgray;
+.social-buttons a{
+  width: 1.5em;
+  transition: .2s ease-in-out;
 }
 
 
-
-
-
-
+.social-buttons a:hover{
+  transform: scale(1.1)
+}
 
 
 
@@ -262,7 +250,13 @@ input,textarea{
     font-family: 'Lato',sans-serif;
     font-weight: 300;
     cursor: pointer;
+    transition: .2s ease-in-out;
   }
+
+button:hover{
+  background-color: #545454;
+}
+
 
   svg{
     min-width: 2em;

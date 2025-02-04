@@ -78,9 +78,13 @@
   }
 
 
+.map-feature{
+  border: .5em solid #545454;
+  box-shadow: 2px 2px 5px gray;
+}
+
   #map{
-    border: .5em solid #545454;
-    box-shadow: 2px 2px 5px gray;
+    filter: grayscale(100%) invert(100) brightness(200%)
   }
 
   .container {
@@ -133,6 +137,9 @@
     font-size: 1.5em;
     text-align: justify;
   }
+
+
+
 
   @media (max-width: 768px) {
     .container {

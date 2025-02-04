@@ -30,6 +30,14 @@ const projects = [{
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
 },
 
+{
+  webpage: '',
+  image: 'src/images/projects/weehawken.jpg',
+  name: 'Weehawken',
+  alt: 'weehawkenr',
+  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
+},
+
 
 ];
 

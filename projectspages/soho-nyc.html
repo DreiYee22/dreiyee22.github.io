@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="../src/styles/footer.css">
     <link rel="stylesheet" href="../src/styles/projects.css">
     <link rel="stylesheet" href="../src/styles/mobile-responsive.css">
-    <link rel="icon" href="../src/icons/icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../src/styles/lightbox.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/scroll-gradient.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="../src/styles/lightbox.css">
+
+    <link rel="icon" href="../src/icons/icon.png" type="image/x-icon" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
     <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
@@ -66,7 +71,7 @@
       <div class="specific-project-container">
         <div class="description"></div>
         <div class="map-feature">
-          <div id="map" style="width: 510px; height: 350px"></div>
+          <div id="map" style="width: 495px; height: 350px"></div>
         </div>
       </div>
     </div>
@@ -132,7 +137,7 @@
     </div>
   
     <div class="container">
-      <div class="small-grid">
+      <div class="small-grid last-item">
         <a href="../src/images/projects/SOHO NYC/16-1.jpg" data-lightbox="soho-nyc" data-title="Living Room 9">
           <img src="../src/images/projects/SOHO NYC/16-1.jpg" alt="Living Room 9" class="image-box" />
         </a>
@@ -175,9 +180,9 @@
   <div class="right-footer">
     <div class="follow-us">
       <h3>Follow Us</h3>
-      <a href="https://www.facebook.com/OfficialAltiura"><img src="../src/icons/facebook.png" alt="altiura-facebook"></a>
-      <a href="https://www.instagram.com/altiuragroup"><img src="../src/icons/instagram.png" alt="altiura-instagram"></a>
-      <a href="https://www.linkedin.com/company/altiura-group"><img src="../src/icons/linkedin.png" alt="altiura-linkedin"></a>
+      <a href="https://www.facebook.com/OfficialAltiura" target="_blank"><img src="../src/icons/facebook.png" alt="altiura-facebook"></a>
+      <a href="https://www.instagram.com/altiuragroup" target="_blank"><img src="../src/icons/instagram.png" alt="altiura-instagram"></a>
+      <a href="https://www.linkedin.com/company/altiura-group" target="_blank"><img src="../src/icons/linkedin.png" alt="altiura-linkedin"></a>
     </div>
   </div>
 </div>
@@ -186,13 +191,14 @@
 </div>
 
 </footer>
-
+<div class="gradient-indicator"></div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="../src/scripts/lightbox-plus-jquery.js"></script>
+<script src="../src/scripts/scroll-gradient.js"></script>
 <script>
   const map = new maplibregl.Map({
-    style: 'https://tiles.openfreemap.org/styles/liberty',
+    style: 'https://tiles.openfreemap.org/styles/bright',
     center: [-74.0019, 40.7246],
     zoom: 16.6,
     container: 'map',
@@ -212,6 +218,7 @@ $('#close-modal')
         $('body').css('overflow', 'auto');
     });
 });
+
 
 </script>
 </body>
