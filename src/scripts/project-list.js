@@ -36,29 +36,46 @@ const projects = [{
   name: 'Weehawken',
   alt: 'weehawkenr',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
-},
+}, 
+
+
 
 
 ];
 
-let projectsListHTML = '';
-
-projects.forEach((project) => {
-    projectsListHTML +=  
-    `
-    <div class="project-card ${project.alt}" onclick="location.href='${project.webpage}'">
-          <img src="${project.image}" alt="altiura-${project.alt}" >
-          <div class="project-details">
-            <div class="project-name">
-              ${project.name}
-            </div>
-            <div class="project-description">
-              <p>${project.description}</p>
-            </div>
+function displayProjects(filteredProjects) {
+  let projectsListHTML = '';
+  
+  if (filteredProjects.length === 0) {
+      projectsListHTML = `<p class="no-projects">No Projects found</p>`;
+  } else {
+      filteredProjects.forEach((project) => {
+          projectsListHTML += `
+          <div class="project-card ${project.alt}" onclick="location.href='${project.webpage}'">
+              <img src="${project.image}" alt="altiura-${project.alt}" >
+              <div class="project-details">
+                  <div class="project-name">
+                      ${project.name}
+                  </div>
+                  <div class="project-description">
+                      <p>${project.description}</p>
+                  </div>
+              </div>
           </div>
-        </div>
-    `
-}
-);
+          `;
+      });
+  }
 
-document.querySelector('.projects').innerHTML = projectsListHTML;
+
+  document.querySelector('.projects').innerHTML = projectsListHTML;
+}
+
+displayProjects(projects);
+
+document.querySelector('.search').addEventListener('input', function() {
+  const searchTerm = this.value.toLowerCase();
+  const filteredProjects = projects.filter(project => 
+      project.name.toLowerCase().includes(searchTerm)
+  );
+  displayProjects(filteredProjects);
+});

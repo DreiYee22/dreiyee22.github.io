@@ -104,7 +104,7 @@ input.search::placeholder{
 
 
   .projects{
-    max-width: 1410px;
+    width: 1410px;
     display: flex;
     flex-wrap: wrap;
     gap: 2em; 
@@ -112,7 +112,6 @@ input.search::placeholder{
     margin: auto;
     
     padding: 1em; 
-
   }
 
   .project-card{
@@ -132,6 +131,8 @@ input.search::placeholder{
     
 
   }
+
+
 
 
   .project-card::before {
@@ -192,6 +193,9 @@ input.search::placeholder{
 
 
 
-
+.no-projects{
+  margin: auto;
+  font-size: 2em;
+}
 
   
