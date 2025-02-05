@@ -34,7 +34,15 @@
     .statement:nth-child(2){
         margin-top: -4em;
     }
+
+    .review-panels{
+        margin-top: 3em;
+    }
    
+    .vision{
+        padding-top: 4em;
+      }
+    
 }
 
 @media (max-width: 550px){
@@ -48,6 +56,65 @@
     .statement p{
         font-size: 1.2rem;
         margin-top: .5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .statement p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 380px){
+    .statement p{
+        font-size: 16px;
+        margin-top: .5rem;
+    }
+
+    .panel{
+        min-width: 16em;
+        height: 28em;
+    }
+
+    .client-review{
+        font-size: 1em;
+    }
+
+    .quote-mark{
+        display: none;
+    }
+
+    .stars{
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .review-panels{
+        margin-top: 3em;
+        padding-bottom: 0em;
+    }
+
+    .m-v-statements{
+        
+    }
+    
+}
+
+@media (max-height: 750px){
+    .client-reviews{
+        padding-top: 10em;
+    }
+}
+
+@media (max-height: 580px){
+    .client-reviews{
+        padding-top: 15em;
+    }
+}
+
+@media (max-height: 450px){
+    .client-reviews{
+        padding-top: 20em;
     }
 }
 
@@ -171,9 +238,7 @@
         flex-direction: column;
     }
 
-    #map{
-        width: 100%;
-    }
+   
 
     .info-map{
         margin-bottom: 2em;
@@ -191,7 +256,40 @@
     .text-container p{
         font-size: 1rem;
     }
+
+    .container p{
+        width: 100%;
+    }
+
 }
 
+@media (max-width: 640px) {
+    .projects-page{
+      padding: 4em 2em;
+    }
 
+    .container {
+      grid-template-columns: 1fr;
+    
+      min-width: none;
+      max-width: 650px;
+    }
+    
+    .small-grid {
+      grid-template-rows: auto;
+
+    }
+
+    #map{
+      min-width: 200px;
+      min-height: 150px;
+    }
+    
+  }
+
+  @media (max-width: 440px){
+    #map{
+      height: 300px;
+    }
+  }
 

@@ -10769,7 +10769,7 @@ return jQuery;
     resizeDuration: 700,
     showImageNumberLabel: true,
     wrapAround: false,
-    disableScrolling: false,
+    disableScrolling: true,
     /*
     Sanitize Title
     If the caption data is trusted, for example you are hardcoding it in, then leave this to false.
@@ -10984,7 +10984,7 @@ return jQuery;
 
     // Disable scrolling of the page while open
     if (this.options.disableScrolling) {
-      $('body').addClass('lb-disable-scrolling');
+      $('html').addClass('lb-disable-scrolling');
     }
 
     this.changeImage(imageNumber);
@@ -11280,7 +11280,7 @@ return jQuery;
     this.$overlay.fadeOut(this.options.fadeDuration);
 
     if (this.options.disableScrolling) {
-      $('body').removeClass('lb-disable-scrolling');
+      $('html').removeClass('lb-disable-scrolling');
     }
   };
 

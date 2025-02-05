@@ -62,9 +62,10 @@
   .projects-list-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  
+    justify-content: flex-start;
   }
+
+
 
   .search-feature{
     display: flex;
@@ -109,7 +110,7 @@ input.search::placeholder{
     flex-wrap: wrap;
     gap: 2em; 
     justify-content: flex-start;
-    margin: auto;
+    
     
     padding: 1em; 
   }

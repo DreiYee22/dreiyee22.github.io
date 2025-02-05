@@ -63,7 +63,7 @@ body{
 
 .container{
   width: 100%;
-
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -88,6 +88,8 @@ body{
   font-size: clamp(2rem, 5vw, 3rem);
   text-align: center;
 }
+
+
 
 .statement p {
   margin-top: 1.5em;
@@ -119,7 +121,7 @@ body{
 .client-reviews-title {
   margin-top: -1em;
   
-  font-size: 3em;
+  font-size: clamp(2rem, 5vw, 3rem);
   text-align: center;
   
 }
