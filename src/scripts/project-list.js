@@ -7,7 +7,7 @@ const projects = [{
 },
 
 {
-    webpage: '',
+    webpage: '/projectspages/27-orchard.html',
     image: 'src/images/projects/27-orchard.png',
     name: '27 Orchard',
     alt: '27-orchard',
@@ -15,7 +15,7 @@ const projects = [{
 },
 
 {
-    webpage: '',
+    webpage: '/projectspages/greater-new-york.html',
     image: 'src/images/projects/greater-new-york.jpg',
     name: 'Greater New York',
     alt: 'greater-new-york',
@@ -23,7 +23,7 @@ const projects = [{
 },
 
 {
-    webpage: '',
+    webpage: '/projectspages/old-quarter.html',
     image: 'src/images/projects/old-quarter.jpg',
     name: 'Old Quarter',
     alt: 'old-quarter',
@@ -31,14 +31,12 @@ const projects = [{
 },
 
 {
-  webpage: '',
+  webpage: '/projectspages/weehawken.html',
   image: 'src/images/projects/weehawken.jpg',
   name: 'Weehawken',
   alt: 'weehawkenr',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
 }, 
-
-
 
 
 ];
