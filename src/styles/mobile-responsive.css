@@ -1,3 +1,13 @@
+@media (max-width: 960px){
+    .header{
+        height: 15em;
+    }
+
+    .header-content{
+        margin-top: 1em;
+    }
+  }
+
 /** Home **/
 @media (max-width: 770px){
     .m-v-statements{
@@ -59,6 +69,7 @@
     .review-panels{
         padding-inline: 2em;
     }
+    
 }
 
 @media (max-width: 430px){
@@ -131,27 +142,71 @@
         padding: 3em;
     }
 
-    .input-box{
-        min-width: 400px;
-        max-width: 90%;
+    .form-container{
+        width: 90%;
+    }
 
+    .input-box{
+        width: 100%;
+        max-width: 100%;
+    
     }
 
     .input-box textarea{
         height: 30px;
     }
+
+    .get-in-touch{
+        text-align: center;
+    }
+
+    .input-box textarea{
+        height: 8em;
+    }
 }
 
 
-@media(max-width: 555px){
+@media(max-width: 716px){
+    .contact-container{
+        width: 100%;
+    }
+
     .contact-info ul{
         flex-direction: column;
         gap: 0em;
     }
 
+
+
     .left-panel{
-        flex-direction: row;
-        align-items: flex-end;
+        flex-direction: column;
+        padding: 1.5em;
+    }
+
+    .social-buttons{
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 450px){
+    .left-panel{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-info svg{
+        display: none;
+    }
+
+    .get-in-touch h3{
+        font-size: 1.75rem;
     }
 }
 

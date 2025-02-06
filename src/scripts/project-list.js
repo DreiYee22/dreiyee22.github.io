@@ -3,7 +3,7 @@ const projects = [{
     image: 'src/images/projects/soho-nyc.jpg',
     name: 'SoHo, NYC',
     alt: 'soho-nyc',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
+    description: 'Staying in SoHo offers a trendy experience with high-end boutiques, art galleries, world-class restaurants, and iconic landmarks like cast-iron buildings in a vibrant Manhattan neighborhood.'
 },
 
 {
@@ -11,7 +11,7 @@ const projects = [{
     image: 'src/images/projects/27-orchard.png',
     name: '27 Orchard',
     alt: '27-orchard',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
+    description: '27 Orchard offers a perfect blend of modern living and convenience, with easy access to shopping centers, dining, and transportation in a vibrant urban setting.'
 },
 
 {
@@ -19,7 +19,7 @@ const projects = [{
     image: 'src/images/projects/greater-new-york.jpg',
     name: 'Greater New York',
     alt: 'greater-new-york',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
+    description: 'Staying in Greater New York offers a vibrant, diverse experience with world-class museums, Broadway shows, unique neighborhoods, and stunning natural beauty, always offering something new to discover.'
 },
 
 {
@@ -27,7 +27,7 @@ const projects = [{
     image: 'src/images/projects/old-quarter.jpg',
     name: 'Old Quarter',
     alt: 'old-quarter',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
+    description: 'The Old Quarter is a historic neighborhood with narrow streets, colonial-era buildings, vibrant markets, and charming cafes, offering a blend of tradition and modern city life.'
 },
 
 {
@@ -35,7 +35,7 @@ const projects = [{
   image: 'src/images/projects/weehawken.jpg',
   name: 'Weehawken',
   alt: 'weehawken',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
+  description: 'This Weehawken residence offers stunning views of New York City, blending history, culture, and convenience with a quick commute to NYC.'
 }, 
 
 
