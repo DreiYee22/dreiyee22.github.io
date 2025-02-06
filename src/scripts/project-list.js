@@ -1,5 +1,5 @@
 const projects = [{
-    webpage: '/projectspages/soho-nyc.html',
+    webpage: '/projects/soho-nyc.html',
     image: 'src/images/projects/soho-nyc.jpg',
     name: 'SoHo, NYC',
     alt: 'soho-nyc',
@@ -7,7 +7,7 @@ const projects = [{
 },
 
 {
-    webpage: '/projectspages/27-orchard.html',
+    webpage: '/projects/27-orchard.html',
     image: 'src/images/projects/27-orchard.png',
     name: '27 Orchard',
     alt: '27-orchard',
@@ -15,7 +15,7 @@ const projects = [{
 },
 
 {
-    webpage: '/projectspages/greater-new-york.html',
+    webpage: '/projects/greater-new-york.html',
     image: 'src/images/projects/greater-new-york.jpg',
     name: 'Greater New York',
     alt: 'greater-new-york',
@@ -23,7 +23,7 @@ const projects = [{
 },
 
 {
-    webpage: '/projectspages/old-quarter.html',
+    webpage: '/projects/old-quarter.html',
     image: 'src/images/projects/old-quarter.jpg',
     name: 'Old Quarter',
     alt: 'old-quarter',
@@ -31,10 +31,10 @@ const projects = [{
 },
 
 {
-  webpage: '/projectspages/weehawken.html',
+  webpage: '/projects/weehawken.html',
   image: 'src/images/projects/weehawken.jpg',
   name: 'Weehawken',
-  alt: 'weehawkenr',
+  alt: 'weehawken',
   description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad culpa provident cumque veritatis? Laudantium facilis laborum aperiam enim ad!'
 }, 
 
