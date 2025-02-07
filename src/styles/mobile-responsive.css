@@ -20,7 +20,6 @@
     }
 }
 
-
 @media (max-width: 1185px){
     .review-panels{
         flex-direction: column;
@@ -104,13 +103,10 @@
     }
 }
 
-
 /** Contact **/
-
 @media (max-width: 840px){
     main{
         height: auto;        
-
     }
 
     .contact-container{
@@ -149,7 +145,6 @@
     .input-box{
         width: 100%;
         max-width: 100%;
-    
     }
 
     .input-box textarea{
@@ -210,18 +205,14 @@
     }
 }
 
-
 /** Projects List **/
-
 @media(max-width:1480px){
     .projects-list-container{
         max-width: 1060px;
-       
     }
 
     .projects{
         width: 100%;
-
     }
 }
 
@@ -258,24 +249,17 @@
         min-width: 280px;
         height:  300px;
     }
-
 }
 
-
 /** Specific Projects **/
-
 @media (max-width: 1120px){
     .info-map{
         flex-direction: column;
     }
 
-   
-
     .info-map{
         margin-bottom: 2em;
     }
-
-
 }
 
 
@@ -295,8 +279,6 @@
     .container{
         flex-direction: column;
     }
-    
-
 }
 
 @media (max-width: 640px) {
@@ -313,7 +295,6 @@
     
     .small-grid {
       grid-template-rows: auto;
-
     }
 
     #map{

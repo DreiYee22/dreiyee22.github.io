@@ -54,7 +54,6 @@ nav a{
     color: white;
 }
 
-
 nav .home-link{
     margin-right: auto;
 }
@@ -78,8 +77,6 @@ nav .home-link{
     z-index: 99; 
 }
 
-
-
 @media (max-width: 780px) {
     .links-container {
         flex-direction: column;
@@ -95,7 +92,6 @@ nav .home-link{
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.20);
         transition: 0.3s ease-out;
         height: 100vh;
-
     }
 
     nav {
@@ -125,22 +121,14 @@ nav .home-link{
         display: block;
     }
 
-    
-
     #sidebar-active:checked ~ .links-container {
         right: -60%;
         z-index: 100;
     }
 
     #sidebar-active:checked ~ #overlay {
-       
         display: block;
-      
-
-
     }
-
-
 }
 
 @media (max-width: 400px){
@@ -153,9 +141,6 @@ nav .home-link{
         right: -655%; 
         z-index: 100;
         width: 400px;
-
     }
-
-    
 }
 

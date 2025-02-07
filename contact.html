@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <nav>
@@ -22,18 +21,13 @@
     <input type="checkbox" id="sidebar-active">
     <label for="sidebar-active" class="open-sidebar-button">
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-
     </label>
-
     <label id="overlay" for="sidebar-active"></label>
 
-    
     <div class="links-container">
       <label for="sidebar-active"  class="close-sidebar-button">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
       </label>
-      
-      
       <a href="home.html">Home</a>
       <a href="projects-list.html">Projects</a>
       <a href="contact.html">Contact</a>
@@ -46,18 +40,15 @@
       <h2>Contact</h2>
     </div>
   </header>
-  
-
 
 <main>
-
   <div class="contact-container">
     <div class="left-panel">
       <div class="get-in-touch">
         <h3>Get in Touch with Altiura</h3>
             </div>
       <div class="info">
-        
+      
       <div class="contact-info">
       <ul>
           <li>
@@ -75,16 +66,14 @@
       </ul>
       </div>
       
-
       <div class="social-buttons">
         <a href="https://www.facebook.com/OfficialAltiura" target="_blank"><img src="src/icons/facebook.png" alt="altiura-facebook"></a>
         <a href="https://www.instagram.com/altiuragroup" target="_blank"><img src="src/icons/instagram.png" alt="altiura-instagram"></a>
         <a href="https://www.linkedin.com/company/altiura-group" target="_blank"><img src="src/icons/linkedin.png" alt="altiura-linkedin"></a>
       </div>
     </div>
-
-
     </div>
+
     <div class="right-panel">
     <form method="POST" name="contact-form" action="https://script.google.com/macros/s/AKfycbwNj3qSeIWDwcflTP5QG_31hokBlg9mzhvnvNhuNM9Fx_z5aFl17m2xOIXdJDH1_q2X3Q/exec">
       <div class="form-container">
@@ -99,19 +88,13 @@
       <label for="message" class="message-label">Message or Feedback</label>
       <div class="input-box">
         <textarea name="Message or Feedback" id="message" required></textarea>
-        
       </div>
-
       <button type="submit" id="submit">SUBMIT</button>
     </div>
     </form>
   </div>
   </div>
-
-
 </main>
-
-
 
 <footer>
   <div class="footer">
@@ -143,32 +126,38 @@
 <div class="rights-reserved">
   @2024 All Rights Reserved
 </div>
-
 </footer>
 
-
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwNj3qSeIWDwcflTP5QG_31hokBlg9mzhvnvNhuNM9Fx_z5aFl17m2xOIXdJDH1_q2X3Q/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwNj3qSeIWDwcflTP5QG_31hokBlg9mzhvnvNhuNM9Fx_z5aFl17m2xOIXdJDH1_q2X3Q/exec'
 
-const form = document.forms['contact-form']
+const form = document.forms['contact-form'];
+const submitButton = document.getElementById('submit');
 
 form.addEventListener('submit', e => {
   
   e.preventDefault()
-  
+
+  submitButton.textContent = 'SUBMITTING...';
+  submitButton.disabled = true;
+
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => alert("Thank you! Your message has been submitted." ))
-  .then(() => { window.location.reload(); })
-  .catch(error => console.error('Error!', error.message))
-})
-  
-
-
+      .then(response => {
+        console.log('Success!', response);
+        alert('Form submitted successfully!');
+        submitButton.textContent = 'SUBMIT'; 
+        submitButton.disabled = false; 
+        form.reset(); 
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        alert('Form submission failed. Please try again.');
+        submitButton.textContent = 'SUBMIT';
+        submitButton.disabled = false; 
+      });
+  });
 </script>
 
-
 </body>
-
-
 </html>
 
