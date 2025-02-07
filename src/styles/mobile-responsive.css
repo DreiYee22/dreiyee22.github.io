@@ -292,6 +292,11 @@
         width: 100%;
     }
 
+    .container{
+        flex-direction: column;
+    }
+    
+
 }
 
 @media (max-width: 640px) {
