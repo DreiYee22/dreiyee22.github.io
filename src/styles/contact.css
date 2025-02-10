@@ -89,6 +89,10 @@ main {
   transform: scale(1.1);
 }
 
+.social-buttons img{
+  width: 1.5em;
+}
+
 .left-panel {
   background-image: url('/src/images/contact-left-panel-background.png');
   width: 50%;
