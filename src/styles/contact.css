@@ -80,7 +80,7 @@ main {
   gap: .5em;
 }
 
-.social-buttons a {
+.social-buttons a { 
   width: 1.5em;
   transition: .2s ease-in-out;
 }
