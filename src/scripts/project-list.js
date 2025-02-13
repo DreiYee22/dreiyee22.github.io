@@ -1,4 +1,14 @@
-const projects = [{
+const projects = [
+    
+    {
+        webpage: '/projects/weehawken.html',
+        image: 'src/images/projects/weehawken.jpg',
+        name: 'Weehawken',
+        alt: 'weehawken',
+        description: 'This Weehawken residence offers stunning views of New York City, blending history, culture, and convenience with a quick commute to NYC.'
+      }, 
+
+    {
     webpage: '/projects/soho-nyc.html',
     image: 'src/images/projects/soho-nyc.jpg',
     name: 'SoHo, NYC',
@@ -29,14 +39,6 @@ const projects = [{
     alt: 'old-quarter',
     description: 'The Old Quarter is a historic neighborhood with narrow streets, colonial-era buildings, vibrant markets, and charming cafes, offering a blend of tradition and modern city life.'
 },
-
-{
-  webpage: '/projects/weehawken.html',
-  image: 'src/images/projects/weehawken.jpg',
-  name: 'Weehawken',
-  alt: 'weehawken',
-  description: 'This Weehawken residence offers stunning views of New York City, blending history, culture, and convenience with a quick commute to NYC.'
-}, 
 
 
 ];
