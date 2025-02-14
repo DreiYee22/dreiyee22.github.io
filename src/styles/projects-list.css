@@ -73,7 +73,7 @@ input.search::placeholder{
   flex-wrap: wrap;
   gap: 2em; 
   justify-content: flex-start;
-  padding: 1em; 
+  padding: 2em 1em; 
 }
 
 .project-card{
