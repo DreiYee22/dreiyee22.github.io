@@ -279,6 +279,10 @@
     .container{
         flex-direction: column;
     }
+
+    .single-picture{
+        width: 100%;
+      }
 }
 
 @media (max-width: 640px) {
