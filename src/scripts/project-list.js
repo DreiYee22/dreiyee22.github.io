@@ -37,7 +37,7 @@ const projects = [
     image: 'src/images/projects/old-quarter.jpg',
     name: 'Old Quarter',
     alt: 'old-quarter',
-    description: 'The Old Quarter is a historic neighborhood with narrow streets, colonial-era buildings, vibrant markets, and charming cafes, offering a blend of tradition and modern city life.'
+    description: "Hanoi's Old Quarter is a historic and vibrant district known for its narrow streets, colonial architecture, and rich cultural heritage. Its blend of traditional shophouses, bustling markets, and modern developments makes it a prime location for real estate investments."
 },
 
 
