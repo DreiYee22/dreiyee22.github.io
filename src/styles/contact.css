@@ -39,6 +39,10 @@ main {
   justify-content: space-between;
 }
 
+.footer-text{
+  color: white;
+}
+
 .contact-container {
   box-sizing: border-box;
   width: 50em;
